@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500&family=Poppins:wght@100;200;300;400;500;700;800;900&family=Rubik+Vinyl&family=Russo+One&display=swap');
+
+
+
+*, *::after, *::before{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.pageBody{
+    background: url("./component/Body/pageback.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav{
+    padding: 5px 10px;
+}
+
+.navi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    color: #fff;
+}
+
+.navi  ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navi  ul >li{
+    margin: 15px;
+    padding: 3px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.navi > div+div+div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+/*main section*/
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    padding: 5rem;
+}
+
+.hero .textHero{
+    width: 100%;
+    align-items: flex-start;
+}
+
+.pngHero{
+    height: 100%;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.overlap{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+}
+
+.overlap1 {
+    grid-column: 1 / span 5;
+    grid-row: 1; 
+    padding-top: 20%;
+    z-index: 1;
+}
+
+.overlap2{
+    grid-column: 15 / -6;
+    grid-row: 1;
+}
+
+.pngHero img{
+    width: 50rem;
+    display: block;
+    object-fit: contain;
+}
+
+.rotate{
+	width: 20em;
+	height: 20em;
+	border-top: 1em solid rgb(0, 186, 233);
+	border-right: 1em solid transparent;
+	border-radius: 50%;
+	margin: auto;
+	animation: spinner 1.5s linear infinite;   /*You can change the speed of the Spinner */
+}
+.circle{
+	width: 1em;
+	height: 1em;
+	background-color: rgb(0, 186, 233);
+	border-radius: 50%;
+	margin-left: 15.5rem;
+	margin-top: -14.7rem;
+}
+@keyframes spinner {
+	100% {transform: rotate(360deg);}
+}
+
+.pngHero img{
+    height: 30rem;
+}
+
+.header{
+    height: 5em;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: 700;
+    font-family: 'Hanken Grotesk','Times New Roman', Times, serif;
+    color: rgb(0, 186, 233) !important;
+}
+
+
+.textHero > p{
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+.textHero > h4{
+    color: rgb(0, 186, 233);
+    font-size: 2rem;
+}
+
+.order{
+    background: #fff;
+    border-radius: 5px;
+    height: 2.5rem;
+    width: 100px;
+    color: rgb(0, 186, 233);
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 2.5rem;
+    transition: 0.5s;
+}
+.order:hover{
+    background: rgb(0, 186, 233);
+    color: #fff;
+    cursor: pointer;
+
+}
+.order > span{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.footer > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer > div > div{
+    margin-right: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.footer > div > div:hover{
+    color: blue;
+    font-size: 1.5rem;
+}
