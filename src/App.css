@@ -22,6 +22,11 @@ nav{
     padding: 5px 10px;
 }
 
+.logo img{
+    width: 1.5rem;
+    height: 1rem;
+}
+
 .navi{
     display: flex;
     justify-content: space-between;
@@ -40,16 +45,10 @@ nav{
     margin: 15px;
     padding: 3px;
     list-style: none;
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
-.navi > div+div+div{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navi >:nth-child(3) >:nth-child(2){
+.cart{
     border-radius: 5px;
     height: 2.5rem;
     width: 100px;
@@ -64,12 +63,18 @@ nav{
     padding: 5px;
 }
 
-.navi >:nth-child(3) >:nth-child(2):hover{
+.cart:hover{
     background: rgb(2,0,36);
     background: linear-gradient(100deg, rgba(2,0,36,1) 0%, rgba(26,165,222,0.8155637254901961) 92%, rgba(0,212,255,1) 100%);
     color: #fff;
     cursor: pointer;
     font-size: 2rem;
+}
+
+.burg{
+    color: #fff;
+    display: none;
+    cursor: pointer;
 }
 
 
@@ -118,6 +123,7 @@ nav{
     width: 50rem;
     display: block;
     object-fit: contain;
+    height: 30rem;
 }
 
 .rotate{
@@ -141,15 +147,13 @@ nav{
 	100% {transform: rotate(360deg);}
 }
 
-.pngHero img{
-    height: 30rem;
-}
+
 
 .header{
     height: 5em;
 }
 
-h1{
+.texthero h1{
     font-size: 3em;
     font-weight: 700;
     font-family: 'Hanken Grotesk','Times New Roman', Times, serif;
@@ -211,4 +215,144 @@ h1{
 .footer > div > div:hover{
     color: blue;
     font-size: 1.5rem;
+}
+
+
+@media only screen and (max-width: 600px){
+    .navi>:nth-child(2){
+        display: none;
+    }
+
+    .hero{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .hero .textHero{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 0rem;
+    }
+
+    h1{
+        font-size: 1.5em;
+        font-weight: 700;
+        font-family: 'Hanken Grotesk','Times New Roman', Times, serif;
+        color: rgb(0, 186, 233) !important;
+    }
+
+    .pngHero img{
+        width: 20rem;
+        display: flex;
+        object-fit: contain;
+        height: 10rem;
+    }
+
+    .order{
+        height: 2.5rem;
+        width: 100px;
+        justify-self: center;
+    }
+
+    .header{
+        height: 2em;
+        margin-bottom: 2rem;
+    }
+
+    .textHero > p{
+        color: aliceblue;
+        font-size: 0.7rem;
+    }
+
+    .textHero > h4{
+        color: rgb(0, 186, 233);
+        font-size: 1rem;
+    }
+
+    .order{
+        background: #fff;
+        border-radius: 5px;
+        height: 2rem;
+        width: 80px;
+        color: rgb(0, 186, 233);
+        font-size: 10px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    .overlap2{
+        display: none;
+    }
+
+    .overlap{
+        display: block;
+        justify-content: center;
+        position: relative;
+    }
+
+
+    .logo img{
+        width: 5rem;
+        height: 3rem;
+    }
+
+    .myLinks{
+        display: none;
+    }
+
+    .burg{
+        display: block;
+    }
+
+    .bluw{
+        height: 18rem !important;
+        width: 18rem !important; 
+    }
+}
+
+
+/*second page*/
+.second{
+    background: rgb(255,255,255);
+    background: linear-gradient(100deg, rgba(255,255,255,1) 0%, rgba(26,94,209,0.4962359943977591) 27%, rgba(64,131,244,1) 60%, rgba(116,8,223,1) 100%);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bluw{
+    height: 40rem;
+    width: 45rem;
+}
+
+.text2 .header{
+    height: 5em;
+}
+
+.text2 h1{
+    font-size: 3em;
+    font-weight: 700;
+    font-family: 'Hanken Grotesk','Times New Roman', Times, serif;
+    color: rgb(144, 116, 223) !important;
+}
+
+
+.text2 > p{
+    color: rgb(30, 34, 37);
+    font-size: 1rem;
+}
+
+.text2 > h4{
+    color: rgb(144, 116, 223);
+    font-size: 2rem;
 }
