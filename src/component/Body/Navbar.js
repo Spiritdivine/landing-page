@@ -15,7 +15,9 @@ const Navbar = () => {
                         <li>VIII Elite</li>
                         <li>Legend 9</li>
                         <li>Contact</li>
+                        
                         <li className="cart"><FiShoppingCart/></li>
+                       
                     </ul>
                 </div>
                 <div className="burg">

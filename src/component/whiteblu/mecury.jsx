@@ -23,7 +23,7 @@ const Mecury = () => {
 
     return ( 
         <div className='hero'>
-            <div className='textHero text2'>
+            <div className='text2'>
                 <p>New Collection</p>
                 <div className='header'>
                     <h1><span ref={el}></span></h1>

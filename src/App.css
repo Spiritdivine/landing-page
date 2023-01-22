@@ -45,7 +45,7 @@ nav{
     margin: 15px;
     padding: 3px;
     list-style: none;
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 .cart{
@@ -153,7 +153,7 @@ nav{
     height: 5em;
 }
 
-h1{
+.texthero h1{
     font-size: 3em;
     font-weight: 700;
     font-family: 'Hanken Grotesk','Times New Roman', Times, serif;
@@ -301,7 +301,7 @@ h1{
 
 
     .logo img{
-        width: 4rem;
+        width: 5rem;
         height: 3rem;
     }
 
@@ -333,4 +333,26 @@ h1{
 .bluw{
     height: 40rem;
     width: 45rem;
+}
+
+.text2 .header{
+    height: 5em;
+}
+
+.text2 h1{
+    font-size: 3em;
+    font-weight: 700;
+    font-family: 'Hanken Grotesk','Times New Roman', Times, serif;
+    color: rgb(144, 116, 223) !important;
+}
+
+
+.text2 > p{
+    color: rgb(30, 34, 37);
+    font-size: 1rem;
+}
+
+.text2 > h4{
+    color: rgb(144, 116, 223);
+    font-size: 2rem;
 }
