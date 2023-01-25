@@ -1,6 +1,6 @@
 import Logo from "./logo.png";
 import { FiShoppingCart } from "react-icons/fi";
-import { GiHamburgerMenu } from "react-icons/gi";
+import Sidebar from "../Sidebar";
 
 const Navbar = () => {
 
@@ -21,7 +21,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="burg">
-                    <GiHamburgerMenu/>
+                    <Sidebar/>
                 </div>
                 
                 
