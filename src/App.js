@@ -1,10 +1,10 @@
 import './App.css';
-import Second from './component/whiteblu/second';
+import Page from './component/landing-page';
 
 function App() {
   return (
     <div className="App">
-      <Second/>
+      <Page/>
     </div>
   );
 }

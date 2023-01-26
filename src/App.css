@@ -23,8 +23,8 @@ nav{
 }
 
 .logo img{
-    width: 1.5rem;
-    height: 1rem;
+    width: 8rem;
+    height: 5rem;
 }
 
 .navi{
@@ -153,8 +153,8 @@ nav{
     height: 5em;
 }
 
-.texthero h1{
-    font-size: 3em;
+.texthero > .header > h1{
+    font-size: 3em !important;
     font-weight: 700;
     font-family: 'Hanken Grotesk','Times New Roman', Times, serif;
     color: rgb(0, 186, 233) !important;
@@ -242,12 +242,6 @@ nav{
         margin-bottom: 0rem;
     }
 
-    h1{
-        font-size: 1.5em;
-        font-weight: 700;
-        font-family: 'Hanken Grotesk','Times New Roman', Times, serif;
-        color: rgb(0, 186, 233) !important;
-    }
 
     .pngHero img{
         width: 20rem;
