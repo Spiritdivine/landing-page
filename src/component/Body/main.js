@@ -26,7 +26,7 @@ const Main = () => {
             <div className='textHero'>
                 <p>New Collection</p>
                 <div className='header'>
-                    <h1><span ref={el}></span></h1>
+                    <h1 style={{fontSize:'3em'}} ><span ref={el}></span></h1>
                 </div>
                 <p>The Nike Mercurial Superfly 8 Elite FG features a new look with specialised components to let you play your fastest from start to finish.</p>
                 <h4>$500</h4>
@@ -39,7 +39,7 @@ const Main = () => {
                     <img src={boot2} alt='boot'></img>
                 </div>
                 <div className='pngHero overlap2 rotate'>
-                    <div class="circle"></div>
+                    <div className="circle"></div>
                 </div>
             </div>
             
