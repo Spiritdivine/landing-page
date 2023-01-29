@@ -23,8 +23,8 @@ nav{
 }
 
 .logo img{
-    width: 1.5rem;
-    height: 1rem;
+    width: 8rem;
+    height: 5rem;
 }
 
 .navi{
@@ -86,12 +86,13 @@ nav{
     align-items: center;
     height: 80vh;
     width: 100%;
-    padding: 5rem;
+    padding: 3rem;
 }
 
 .hero .textHero{
-    width: 100%;
     align-items: flex-start;
+    padding: 5px;
+    width: 65rem;
 }
 
 .pngHero{
@@ -120,10 +121,10 @@ nav{
 }
 
 .pngHero img{
-    width: 50rem;
+    width: 37rem;
     display: block;
     object-fit: contain;
-    height: 30rem;
+    height: 23rem;
 }
 
 .rotate{
@@ -153,13 +154,11 @@ nav{
     height: 5em;
 }
 
-.texthero h1{
-    font-size: 3em;
-    font-weight: 700;
-    font-family: 'Hanken Grotesk','Times New Roman', Times, serif;
-    color: rgb(0, 186, 233) !important;
-}
 
+.header .title{
+    font-size: 3rem;
+    color: rgba(56, 1, 184, 0.496);
+}
 
 .textHero > p{
     color: aliceblue;
@@ -218,7 +217,7 @@ nav{
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
     .navi>:nth-child(2){
         display: none;
     }
@@ -242,12 +241,6 @@ nav{
         margin-bottom: 0rem;
     }
 
-    h1{
-        font-size: 1.5em;
-        font-weight: 700;
-        font-family: 'Hanken Grotesk','Times New Roman', Times, serif;
-        color: rgb(0, 186, 233) !important;
-    }
 
     .pngHero img{
         width: 20rem;
@@ -265,6 +258,11 @@ nav{
     .header{
         height: 2em;
         margin-bottom: 2rem;
+    }
+
+    .header .title{
+        font-size: 1.5rem;
+        color: rgba(56, 1, 184, 0.496);
     }
 
     .textHero > p{
@@ -313,12 +311,45 @@ nav{
         display: block;
     }
 
+    /*second*/
     .bluw{
         height: 18rem !important;
         width: 18rem !important; 
     }
+
+    .text2{
+        text-align: center;
+    }
+
+    .text2 .header{
+        height: 3em;
+    }
 }
 
+
+@media only screen and (max-width: 1000px){
+    .header .title{
+        font-size: 2rem;
+        color: rgba(56, 1, 184, 0.496);
+    }
+    
+    .pngHero img{
+        width: 25rem;
+        display: flex;
+        object-fit: contain;
+        height: 15rem;
+    }
+
+    .myLinks{
+        display: none;
+    }
+
+    .burg{
+        display: block;
+    }
+
+
+}
 
 /*second page*/
 .second{
@@ -334,6 +365,8 @@ nav{
     height: 40rem;
     width: 45rem;
 }
+
+
 
 .text2 .header{
     height: 5em;
